@@ -7,6 +7,6 @@ public class Main {
         if((health < 20) && (highScore < 1000)){
             highScore -= 1000;
         }
-        
+
     }
 }
