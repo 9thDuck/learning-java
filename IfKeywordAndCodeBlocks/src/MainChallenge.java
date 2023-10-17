@@ -1,19 +1,15 @@
-package src;
-
 public class MainChallenge {
     public static void main(String[] args) {
-
         boolean gameOver = true;
         int score = 800, highScore = 5_000,
                 levelCompleted = 5,
-                bonus = 100;
-        
-        score = 10_000;
-        highScore = 5_000;
-        levelCompleted = 8;
-        bonus = 200;
+                bonus = 100, finalScore = score;
 
-        int finalScore = score;
+        calculateScore(gameOver, score, levelCompleted, bonus, finalScore);
+
+    }
+
+    public static void calculateScore(boolean gameOver, int score, int levelCompleted, int bonus, int finalScore) {
 
         if (gameOver) {
             finalScore += (levelCompleted * bonus);
